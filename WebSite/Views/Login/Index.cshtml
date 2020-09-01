@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<h2>Index</h2>
+
+<form action="@Url.Action("index")" method="post">
+    <input name="username" />
+    <input name="password" />
+    <input name="code" />
+    <div id="code">
+        
+    </div>
+    <button type="submit">提交</button>
+    @ViewBag.tip
+</form>
+<script>
+    $(function () {
+        $.post("@Url.Action("code","home")", function (data) {
+           
+            $("#code").html(data);
+        })
+    })
+</script>

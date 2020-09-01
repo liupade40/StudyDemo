@@ -1,0 +1,14 @@
+﻿<Window x:Class="DelegateToValue.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DelegateToValue"
+        mc:Ignorable="d"
+        Title="Window1" Height="300" Width="300">
+    <Grid>
+        <Button Content="Button" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="83,112,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" x:Name="textbox" VerticalAlignment="Top" Width="120" Margin="67,60,0,0"/>
+
+    </Grid>
+</Window>

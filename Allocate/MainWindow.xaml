@@ -1,0 +1,35 @@
+﻿<Window x:Class="Allocate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Allocate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="ListViewItem">
+            <Setter Property="Padding" Value="0"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView x:Name="grid" Padding="0">
+            <ListView.View>
+                <GridView >
+                    <GridViewColumn >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate >
+                                <Canvas>
+                                    <Border  Padding="0" BorderBrush="Red" BorderThickness="1,1,1,1" Background="Gray" Height="{Binding Path=Height}" Width="20" Canvas.Left="{Binding Path=Left}"></Border>
+                                    
+                                </Canvas>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+
+</Window>

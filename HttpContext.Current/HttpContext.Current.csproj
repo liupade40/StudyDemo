@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\netcoreCommon\netcoreCommon.csproj" />
+    <ProjectReference Include="..\netcoreRespository\netcoreRespository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Users\Benny Liu\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.visualstudio.web.codegeneration.utils\2.0.2\lib\netstandard2.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
